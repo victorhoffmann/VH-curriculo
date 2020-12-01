@@ -1,0 +1,24 @@
+/* RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #f15722;
+}
+main {
+    background-color: yellow;
+    padding: 50px;
+    width: 800px;
+    margin: 30px auto;
+}
+a {
+    color: inherit;
+    font-weight: bolder;
+    text-decoration: none;
+}
+ul, ol{
+    list-style: none;
+}
