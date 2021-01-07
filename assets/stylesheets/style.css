@@ -14,7 +14,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 header,
@@ -147,4 +147,24 @@ a[href*="tel"]::before {
     100% {
         border: 2px solid blue;
     }
+}
+
+#meufooter {
+    text-align: center;
+}
+
+header div {
+    margin: -40px 0 0 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+aside h1 {
+    font-family: 'Roboto';
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+#objetivo mark {
+    background-color: rgba(181, 194, 248, .2);
 }
