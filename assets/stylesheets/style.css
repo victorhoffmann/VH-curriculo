@@ -85,10 +85,6 @@ header img {
     height:120px;
 }
 
-header img:hover {
-    transform: rotateY(360deg);
-}
-
 #habilidades article {
     background-color: var(--bg1);
     border-radius: 16px 0;
