@@ -80,7 +80,7 @@ p {
 header img {
     animation: bordaCamaleao 4s infinite;
     border: 2px solid var(--bg1);
-    border-radius: 10px;
+    border-radius: 11px;
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
     width:120px;
     height:120px;
