@@ -79,12 +79,11 @@ p {
 
 header img {
     animation: bordaCamaleao 4s infinite;
-    border: 2px solid var(--primaria);
-    border-radius: 50%;
+    border: 2px solid var(--bg1);
+    border-radius: 10px;
     filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.2));
-    width:96px;
-    height:96px;
-    transition: transform .8s cubic-bezier(.42,0,1,1);
+    width:120px;
+    height:120px;
 }
 
 header img:hover {
@@ -112,6 +111,12 @@ a[href*="tel"]::before {
     margin-right: 4px;
 }
 
+a[href*="mailto"]::before {
+    content: '\2709';
+    margin-right: 4px;
+    font-size: 20px;
+}
+
 [class*='item'] {
     background-color: var(--bg1);
     border-radius: 32px;
@@ -130,24 +135,6 @@ a[href*="tel"]::before {
 [class*="-item"]:first-of-type {
     background-color: var(--bg4);
 }  
-
-@keyframes bordaCamaleao {
-    0% {
-        border: 2px solid blue;
-    }
-    25% {
-        border: 2px solid red;
-    }
-    50% {
-        border: 2px solid yellow;
-    }
-    75% {
-        border: 2px solid green;
-    }
-    100% {
-        border: 2px solid blue;
-    }
-}
 
 #meufooter {
     text-align: center;
