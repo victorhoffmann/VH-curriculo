@@ -77,6 +77,7 @@ p {
     margin: 8px auto;
 }
 
+
 header img {
     border: 2px solid var(--bg1);
     border-radius: 11px;
@@ -131,14 +132,10 @@ a[href*="mailto"]::before {
     background-color: var(--bg4);
 }  
 
-#meufooter {
-    text-align: center;
-}
-
-header div {
-    margin: -40px 0 0 50%;
-    display: inline-block;
-    vertical-align: middle;
+#meuFooter {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 
 aside h1 {
@@ -149,4 +146,62 @@ aside h1 {
 
 #objetivo mark {
     background-color: rgba(181, 194, 248, .2);
+}
+
+.icones {
+    width: 30px;
+    height: 30px;
+}
+
+@media only screen and (max-width: 576px) {
+    #elements-header {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+
+    header {
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    #elements-header {
+        display: flex;
+        flex-direction: column;
+        text-align: end;
+        margin-top: -130px;
+    }
+
+    #icones-header {
+        text-align: end;
+        margin-right: 40px;
+        margin-top: -15px;
+    }
+    #meuFooter {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    #elements-header {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: -80px;
+        margin-left: 100px;
+    }
+
+    #elements-header span,
+    #elements-header a {
+        padding-right: 7px;
+    }
+
+    #icones-header {
+        padding: 0;
+    }
 }
